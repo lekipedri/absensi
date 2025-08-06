@@ -1,16 +1,41 @@
-# absensiapp
+#  Aplikasi Absensi Flutter
 
-A new Flutter project.
+Aplikasi mobile absensi berbasis Flutter yang memanfaatkan validasi lokasi dan selfie kamera sebagai bukti kehadiran. Cocok untuk kebutuhan absensi karyawan, pegawai, atau mahasiswa.
 
-## Getting Started
+##  Fitur Utama
 
-This project is a starting point for a Flutter application.
+-  **Validasi Lokasi**  
+  Menggunakan plugin `geolocator`, aplikasi memverifikasi apakah pengguna berada dalam radius 100 meter dari lokasi kantor.
 
-A few resources to get you started if this is your first Flutter project:
+-  **Dokumentasi Selfie**  
+  Pengguna harus mengambil selfie sebelum melakukan absensi.
 
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
+-  **Peta Lokasi**  
+  Menampilkan lokasi pengguna dan kantor menggunakan plugin `flutter_map`.
 
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+-  **Riwayat Absensi**  
+  Menyimpan riwayat absensi lokal:
+  - Tanggal & waktu
+  - Status lokasi (valid / tidak valid)
+  - Thumbnail selfie
+
+-  **Penyimpanan Lokal**  
+  Semua data disimpan menggunakan `SharedPreferences`, tanpa backend/API.
+
+##  Teknologi
+
+- Flutter
+- Dart
+- Shared Preferences
+- Geolocator
+- Flutter Map
+- Image Picker
+- Permission Handler
+- latlong2
+
+## 🚀 Cara Menjalankan
+```bash
+flutter pub get
+flutter run
+```
+
